@@ -1,4 +1,4 @@
-// for of
+// for of: this loop is mainy used for the array method. It access all the item from the above. 
 
 // const arr = [1, 2, 3, 4, 5]
 // for (const num of arr) {
@@ -12,7 +12,10 @@
     
 // }
 
-// maps
+
+/************************************************************************************************************* */
+
+// maps: map cannot be access by using the for of loop.
 
 // const map = new Map()
 // map.set('IN','india')
@@ -21,6 +24,4 @@
 
 // for (const [key, value] of map) {
 //     console.log(key);
-    
-    
 // }
