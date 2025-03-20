@@ -9,7 +9,7 @@
     <h2>Amazing images</h2>
     <div style="background-color: #414141;">
         <ul id="images">
-            <li><img width="200px" id="icecream" src="https://images.pexels.com/photos/30941227/pexels-photo-30941227/free-photo-of-vintage-train-car-interior-with-upholstered-seating.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="icecream"</li>
+            <li><img  width="200px" id="icecream" src="https://images.pexels.com/photos/30941227/pexels-photo-30941227/free-photo-of-vintage-train-car-interior-with-upholstered-seating.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="icecream"</li>
             <li><img width="200px" id="horse" src="https://images.pexels.com/photos/53114/horse-arabs-stallion-ride-53114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="horse"</li>
 
             <li><img width="200px" id="dog" src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="dog"</li>
@@ -23,12 +23,19 @@
     //     alert("flower")
     // }
 
-    document.getElementById("flower").addEventListener('click',function(e){
-        console.log(e);
+    // document.getElementById("flower").addEventListener('click',function(e){
+    //     console.log(e);
         
-    })
+    // })
 
     //attachEvent()
     //jQuery - on
+
+    document.querySelector("#images").addEventListener
+    ("click", function(e){
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+    })
 </script>
 </html>
